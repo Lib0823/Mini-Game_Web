@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>        
+  <head>
+    <meta charset="UTF-8">
+    <title>TETRIS</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="tetris_css.css"> <!--CSS파일-->
+    <script type="text/javascript" src="tetris_js.js"></script>     <!--JS파일-->
+  </head>
+  <body>
+    <h1>Tetris Game</h1> &nbsp&nbsp&nbsp <h5>name : </h5><span id="name">? ? ?</span> <br> <!--메인에서 받아온 닉네임을 표시-->
+    <div class="wrapper-container">
+      <span class="tetris-container">         <!--왼쪽-->
+            <canvas id="stage" width="250px" height="500px" style="background-color:black;">
+            </canvas>
+        <span class="tetris-panel-container"> <!--오른쪽-->
+          <button id="reset">Reset</button>
+          <p>Next</p> 
+            <canvas id="next" width="150px" height="130px" style="background-color:black;">
+            </canvas>
+          <br><p> SCORE : <span id="score">0</span></p> <!--점수-->
+           <p><span id="message"></span></p>  <!--상태메시지-->
+           <div class="tetris-panel-container-padding"></div>
+           <table class="tetris-button-panel"> <!--조작키-->
+             <tr>
+              <td></td>
+               <td id="tetris-rotateUp-button" class="tetris-button">↑</td>    
+              <td></td>
+             </tr>
+             <tr>
+              <td id="tetris-move-left-button"class="tetris-button">←</td>
+              <td id="tetris-rotateDown-button"class="tetris-button">↓</td>
+              <td id="tetris-move-right-button"class="tetris-button">→</td>
+             </tr>
+             <tr></tr>
+             <tr>
+              <td colspan="3" id="tetris-fall-button"class="tetris-button">SPACE</td>
+             </tr>
+           </table>
+        </span>
+      </span>
+    </div>
+    <script>  // JS파일 Tetris클래스의 객체를 생성하고 startGame메서드 실행
+      var tetris = new Tetris();
+      setTimeout(function() {
+        tetris.startGame();
+      }, 1000);
+
+      let messageElem = document.getElementById("message");
+      messageElem.innerText = 'Start!';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+html {
+    touch-action: manipulation;
+    background-color: lightsteelblue;
+}
+
+h1, h5 {
+    display: inline;
+}
+
+h1 {
+    color: darkblue;
+    padding-left: 50pt;
+}
+h5 {
+    color: black;
+}
+
+#next {
+    padding-top: 40px;
+}
+
+#message {
+    color: red;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.wrapper-container {
+    display: inline-block;
+}
+
+.tetris-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color: #474747;
+}
+
+.tetris-panel-container {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    color: white;
+    background-color: #474747;
+}
+
+.tetris-panel-container-padding {
+    flex-grow: 1;
+}
+
+.tetris-panel-container p {
+   margin: 0;
+   padding: 0;
+}
+
+.tetris-button-panel {
+    border-style: none;
+    width: 100%;
+}
+
+.tetris-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: rgb(132, 131, 131);
+}

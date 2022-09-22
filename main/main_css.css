@@ -1,0 +1,26 @@
+.container-main {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+   font-size: 30pt;
+   font-style: italic;
+   color: darkblue;
+}
+p {
+    padding-right: 90px;
+}
+
+.container-input {
+    float: right;
+    padding-right: 10px;
+}
+
+button {
+    margin: 5px;
+    height: 55px;
+    width: 400px;
+    
+}

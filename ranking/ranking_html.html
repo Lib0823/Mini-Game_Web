@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ranking_css.css">
+    <title>랭킹 화면</title>
+</head>
+<body>
+    <h1>Ranking</h1>
+
+    <div class="container">
+        <span class="select-container">
+            <form>
+                Game : 
+                <select id="gameSelect">
+                    <option>Tetris</option>
+                    <option>Jump</option>
+                    <option>Number</option>
+                </select>
+                <button id="search-btn" onclick="rankingSearch();">search</button>
+            </form>
+        </span> <br>
+
+        <span class="title-container">
+            <h4>Rank</h4><h4 id="space">Name</h4><h4>Score</h4>
+        </span>
+
+        <span class="list-container">
+            <ol id="test-list">
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+                <li>? ? ?</li>
+            </ol>
+
+        </span>
+
+      </div>
+    
+<script type="text/javascript" src="ranking_js.js"></script>
+</body>
+</html>
